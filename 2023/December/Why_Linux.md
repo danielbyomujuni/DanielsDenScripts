@@ -1,0 +1,25 @@
+## Video Description
+
+
+## Script
+  I have made a severe and continuous lapse in judgement.
+
+  I'm an Arch Linux User.
+
+  The transition to Linux became an undeniable necessity for me, fueled by the limitations I faced with Windows. The lack of customization options limited me in how i could build my workflow. Windows came bundled with a plethora of bloat applications, eating away at system resources and cluttering my application drawer. The constant background telemetry, seemingly invasive and privacy-compromising, further fueled my discontent. Seeking a more liberated and user-centric computing experience, I embarked on the Linux journey, where customization knows no bounds, unwanted bloat is a thing of the past ...mostly, and privacy is firmly in the hands of my hands.
+
+  The catylist for the switch to linux started I decided to set up a Jellyfin server to host my anime collection. The resource demands and managment of it took a toll on my Windows installation, prompting me to seek a more robust and efficient operating system. Enter Pop!_OS, a Linux distribution renowned for its user-friendliness. The transition was seamless, as I was familar with the Gnome Desktop Enviorment from School. Pop!_OS was not the most ideal platform for my Jellyfin server, however it was considerably better than window for a bit.
+
+  However, the overall adjustment period had its share of complexities. At one point, I found myself reinstalling Windows momentarily, swayed by the familiarity. Yet, the persistent desire for a more tailored and efficient system led me to explore further. This exploration brought me to Arch Linux, an operating system that resonated with my need for control and customization.
+
+  On my first attempt, using the Arch Linux install script ('archinstall'), I opted for the KDE desktop environment, enticed by its aesthetic appeal and robust features along with being able to be taliored similar to windows using the panel system. The Arch installation process, known for its hands-on nature, provided a stark contrast to most automated setups I had grown accustomed to. The Arch Wiki help with figuring out how things work and researching packages I might need. Configuring KDE was a revelation in customization – every aspect of the desktop, from widgets to window management, was at my fingertips. It was this level of control and the sheer satisfaction of crafting a desktop environment tailored to my preferences that solidified Arch Linux as my operating system of choice. However Everything was not perfect KDE plasma still didn't feel quite right but I didn't know why. Then I bricked my system
+
+  My second attempt at Arch Linux took a different turn as I opted for the GNOME desktop environment. GNOME, with its sleek design and user-friendly interface, became the canvas for my creativity. The Arch installation process, unfolded seamlessly. As I delved into customization, GNOME's extensions and theming options allowed me to mold the desktop into a form that was not just functional but aesthetically pleasing. It was during this phase that I realized the true extent of Linux's potential for personalization. My GNOME setup, finely tuned and almost perfect, stands as a testament to the versatility and beauty that Arch Linux brings to the table. I used gnome for quite a while then I found an extetion by System 76 creators of Pop!_OS, a tiling window manager extension for gnome. That made my workflow perfect.
+
+  Then gnome 45 was release and broke to extention which made me a bit sad. However decided to try a wayland compositor mainly Hyprland. The switch from Hyprland was difficult as unlike Gnome it didn't come with a whole bunch of bundled software. Which is a blesing and a curse. My transistion was slow as I had to build out my workflow essentialy from scratch but I enjoyed it. I started Using waybar as my topbar however I mirgirated to eww for one simple reason, CSS hover didn't work. after recreating the exact same topbar using eww I chose rofi as my application menu and did a few other thing to get my hyprland enviorment perfect. except for one thing well a few cardinals sin that built up. Gaming.
+
+  I am some what of a Gamer however Hyprlands tearing protcol is still experimental and tha fact that Im using a NVIDIA Graphics card Which I require for some CUDA Developement nor can I afford to get a diffrent one, puts my at quite a problem. Warning for flashing lights was the fact that tearing refused to work leading to this happening in games. I was able to diagnose it as and Issue with the tearing implementation in hyprland as I could not replicated the Issue in the Wayland Session of KDE plasma. As Nvidia hardware is not supported by Hyprland if I wanted it fixed I would have to do it my self, leading me to fork the compositor.
+  First cause of the problem is dispite tearing being configured corretly hyprland doesnt register that the monitor can tear thus skiping the guard statement to verfiy whether the compositior should tear.
+
+  
+
